@@ -1,0 +1,28 @@
+{
+  "name": "spiky-clouds",
+  "version": "1.0.0",
+  "description": "A generative images software that parses images into spiky clouds",
+  "main": "./lib/index.js",
+  "bin": "./bin/spiky-clouds",
+  "files": ["!/docs/*"],
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luxedo/spiky-clouds.git"
+  },
+  "keywords": [
+    "generative",
+    "art",
+    "spiky"
+  ],
+  "author": "Luiz Eduardo Amaral",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "cli-progress": "^2.1.1",
+    "minimist": "^1.2.0",
+    "string-width": "^3.0.0",
+    "wordwrap": "^1.0.0"
+  }
+}
