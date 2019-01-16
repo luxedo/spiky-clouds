@@ -1,10 +1,10 @@
 {
   "name": "spiky-clouds",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A generative images software that parses images into spiky clouds",
   "main": "./lib/index.js",
   "bin": "./bin/spiky-clouds",
-  "files": ["!/docs/*"],
+  "files": ["**/*", "!/docs/*", "!/.git/*"],
   "scripts": {
     "test": "node test/test.js"
   },
