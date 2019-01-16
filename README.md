@@ -46,6 +46,30 @@ The arguments `maxLength`, `minLength`, `maxWidth`, `minWidth`
 Their value should be a float that represents a percentage of the perimeter, eg:
 0.05 => 5% of the perimeter.
 
+#### Command line
+There's also a command line application
+```
+Usage: spiky-clouds [-h | -v] [OPTS] INPUT_FILE OUTPUT_FILE
+Converts images applying the 'spiky-clouds' filter
+
+Arguments:
+  -h, --help        Show this help.
+  -v, --version     Shows the software version.
+  -s, --seed        Chooses the seed to be used for pseudo random number generation.
+  -l, --min-length  Chooses the minimum length of a needle. Default: 0.00 (0%).
+  -L, --max-length  Chooses the maximum length of a needle. Default: 0.02 (2%).
+  -w, --min-width   Chooses the minimum width of a needle. Default: 0.0005 (0.05%).
+  -W, --max-width   Chooses the maximum width of a needle. Default: 0.001 (0.1%).
+  -a, --alpha       Sets the value for the alpha channel for the needles. Default: 255
+  -r, --rotation    Chooses the mode in which the needles align. Default: "min_gradient".
+    Available modes:
+      min_gradient  Draws the needles in the direction of the smallest gradient.
+      max_gradient  Draws the needles in the direction of the largest gradient.
+      random        Draws the needles randomly.
+  -g, --angles:     Limits the available angles (in radians) for the rotation modes, eg: "[0, PI]" - horizontal needles.
+  --verbose:        Shows the progress of the render
+```
+
 ## Examples
 
 |Mode|Lena|Logo|
