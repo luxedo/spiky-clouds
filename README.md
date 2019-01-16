@@ -1,8 +1,8 @@
 # Spiky Clouds
 This is a filter that converts images into spiky images.
-The image is created by drawing needles instead o pixels for each pixel value.
+The image is created by drawing needles instead of pixels for each pixel value.
 
-You get a crappy drawing of yours and transforms it into a spooky image:
+You get a crappy drawing of yours and it transforms the drawing into a spooky image:
 
 |Original|Spiky|
 |:-------------------------:|:-------------------------:|
@@ -42,8 +42,7 @@ Applies the filter in the `inputFile` generating the `outputFile`.
 -   `angles`: Limits the available angles (in degrees) for the rotation modes, eg: `[0, 180]` - *horizontal needles*.
 -   `verbose`: Shows the progress of the render.
 
-The arguments `maxLength`, `minLength`, `maxWidth`, `minWidth`
-Their value should be a float that represents a percentage of the perimeter, eg:
+The value arguments `maxLength`, `minLength`, `maxWidth`, `minWidth` should be a float that represents a percentage of the perimeter, eg:
 0.05 => 5% of the perimeter.
 
 #### Command line
@@ -72,7 +71,7 @@ Arguments:
 
 ## Examples
 
-|Mode|Lena|Logo|
+|Mode|Logo|Lena|
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |Original|![logo](docs/spiky-clouds.png)|![lena](docs/lena.png)|
 |Minimum gradient rotation|![logo](docs/spiky-clouds-min-gradient.png)|![lena](docs/lena-min-gradient.png)|
